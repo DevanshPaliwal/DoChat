@@ -10,12 +10,12 @@ import {getFirestore,collection} from 'firebase/firestore'
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyASflb_gwodVLWaKYTZvq8tUGUbFCJt6mo",
-  authDomain: "dochat-e7f17.firebaseapp.com",
-  projectId: "dochat-e7f17",
-  storageBucket: "dochat-e7f17.appspot.com",
-  messagingSenderId: "835300122512",
-  appId: "1:835300122512:web:d8a4cf0f1ffa97c7f05d15"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 
 // Initialize Firebase
