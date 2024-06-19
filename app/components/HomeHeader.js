@@ -6,6 +6,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { blurhash } from './utils/common';
 import { useAuth } from '../context/authContext';
 import { MenuItem } from './custommenuitems';
+import { useRouter } from 'expo-router'
 import {
     Menu,
     MenuOptions,
@@ -13,7 +14,8 @@ import {
     MenuTrigger,
   } from 'react-native-popup-menu';
 import { Octicons } from '@expo/vector-icons';
-import Uploadimage from './uploadimage';
+
+
 
 
 const android = Platform.OS == 'android'
@@ -22,8 +24,9 @@ export default function HomeHeader() {
     const { user,logout } = useAuth()
     const { top } = useSafeAreaInsets()
 
+    const router=useRouter()
     const handleProfile=()=>{
-
+        router.push('ImageUpload')
     }
 
     const handleLogout=async()=>{
@@ -54,6 +57,7 @@ export default function HomeHeader() {
                     }
                   }}
                 >
+                    
                     <MenuItem
                     text="Profile"
                     action={handleProfile}
