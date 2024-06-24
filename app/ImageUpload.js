@@ -4,9 +4,7 @@ import * as ImagePicker from 'expo-image-picker'
 import { heightPercentageToDP } from 'react-native-responsive-screen'
 import { useRouter } from 'expo-router'
 
-export default function ImageUpload() {
-
-  const router = useRouter()
+export default function ImageUpload({router}) {
 
   const [image, setImage] = useState(null)
 
@@ -30,7 +28,7 @@ export default function ImageUpload() {
         image && <Image source={{ uri: image }} style={styles.image} />
       }
       <View style={styles.goback}>
-        <TouchableOpacity style={styles.gobackbut} onPress={() => router.replace('home')}>
+        <TouchableOpacity style={styles.gobackbut} onPress={() => router.back()}>
           <Text>Go Back</Text>
         </TouchableOpacity>
       </View>
