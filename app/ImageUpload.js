@@ -1,8 +1,6 @@
 import { View, Text, Button, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import * as ImagePicker from 'expo-image-picker'
-import { heightPercentageToDP } from 'react-native-responsive-screen'
-import { useRouter } from 'expo-router'
 
 export default function ImageUpload({router}) {
 

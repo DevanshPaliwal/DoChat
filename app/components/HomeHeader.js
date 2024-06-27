@@ -26,7 +26,7 @@ export default function HomeHeader() {
 
     const router=useRouter()
     const handleProfile=()=>{
-        router.push('ImageUpload')
+        router.push({pathname:'../ImageUpload'})
     }
 
     const handleLogout=async()=>{
